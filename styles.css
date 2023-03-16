@@ -42,6 +42,7 @@ body {
     flex-direction: row;
     /* background: rgba(255, 255, 0, 0.461); */
     justify-content: space-between;
+    margin-top: 40px;
 }
 
 .header__hero {
@@ -122,7 +123,7 @@ body {
     align-items: center;
     justify-content: space-around;
     column-gap: 40px;
-    margin-top: 50px;
+    margin-top: 175px;
 
 }
 
@@ -136,12 +137,16 @@ body {
 
 .textblock__heading {
     font-size: 50px;
-    font-weight: 500;
+    font-weight: 700;
     text-align: start;
     margin-bottom: 0;
+    line-height: 60px;
+    width: 555px;
 }
 
 .textblock_paragraph {
+    margin-top: 20px;
+    line-height: 30px;
     font-size: 16px;
     font-weight: 200;
     text-align: start;
@@ -151,10 +156,12 @@ body {
 .textblock__button {
     width: 250px;
     height: 60px;
+    margin-top: 30px;
     border-radius: 10px;
     background: #F53838;
     color: white;
     border: none;
+    font-size: 16px;
 }
 
 .button_n_shadow {
@@ -285,6 +292,7 @@ body {
     width: 383px;
     font-weight: 500;
     font-size: 35px;
+    line-height: 50px;
 }
 
 .features_paragraph {
@@ -295,6 +303,7 @@ body {
     font-weight: 200;
     text-align: start;
     width: 427px;
+    line-height: 30px;
 }
 
 .feature {
@@ -303,7 +312,8 @@ body {
     font-size: 14px;
     font-weight: 200;
     column-gap: 12px;
-    margin-top: -2px;
+    margin-top: 30px;
+    align-items: center;
 }
 
 
