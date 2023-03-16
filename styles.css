@@ -1,0 +1,404 @@
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: #F53838;
+  }
+  
+  .hover-underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #F53838;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .hover-underline-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+
+/* -------------------- animations ------------------ */
+
+body {
+    text-align: center;
+
+    font-family: 'Rubik', sans-serif;
+}
+
+.container {
+    margin:20px 150px;
+    /* background: aqua; */
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    /* background: rgba(255, 255, 0, 0.461); */
+    justify-content: space-between;
+}
+
+.header__hero {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* background: rgb(255, 141, 141); */
+}
+
+.header__logo {
+    width: 35px;
+    height: 36.23px;
+    margin-right: 10px;
+
+}
+
+.logo_slogan { font-weight: 500; font-size: 20px;}
+
+
+.header__nav {
+    width: 500px;
+    /* background-color: rgba(79, 79, 255, 0.316); */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.header__navlink {
+    text-decoration: none;
+    color: #4F5665;
+    font-size: 16px;
+    font-weight: 400;
+
+}
+
+.header__auth {
+    /* background-color: rgba(255, 166, 0, 0.471); */
+    display: flex;
+    align-items: center;
+}
+
+
+.header__signinbutton {
+    border: none;
+    background: none;
+    color: #0B132A;
+    font-size: 16px;
+    font-weight: 500;
+    margin-right: 30px;
+}
+
+
+.header__signupbutton {
+    width: 150px;
+    height: 45px;
+    border-radius: 50px;
+    background: none;
+    border: 1px solid #F53855;
+    color: #F53855;
+    font-weight: 500;
+    font-size: 16px;
+    transition: .1s ease-in-out;
+}
+
+
+.header__signupbutton:hover {
+    background: #F53838;
+    color: white;
+}
+
+/* -------------------------- SECTION 1 ------------------------- */
+
+.section-1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    column-gap: 40px;
+    margin-top: 50px;
+
+}
+
+.textblock {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 550px;
+}
+
+
+.textblock__heading {
+    font-size: 50px;
+    font-weight: 500;
+    text-align: start;
+    margin-bottom: 0;
+}
+
+.textblock_paragraph {
+    font-size: 16px;
+    font-weight: 200;
+    text-align: start;
+    color: #4F5665;
+}
+
+.textblock__button {
+    width: 250px;
+    height: 60px;
+    border-radius: 10px;
+    background: #F53838;
+    color: white;
+    border: none;
+}
+
+.button_n_shadow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position:relative;
+    left:-35px;
+}
+
+.button_shadow {
+    margin-top: -100px;
+    z-index: -1;
+}
+
+.section1__img {
+
+}
+
+
+/* ---------------------- STATISTICS ROW ----------------------- */
+
+.stats_row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 170px;
+    justify-content: space-between;
+    padding: 0 91px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    padding-top: 104px;
+
+}
+
+.stat {
+    display: flex;
+    flex-direction: row;
+}
+
+.stat_point {
+    margin-left: 0px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 37px;
+    align-items: start;
+
+
+}
+
+.stat_num {
+    font-size: 25px;
+    font-weight: 700px;
+    line-height: 30px;
+    margin: 0;
+
+
+}
+
+.stat_word {
+    font-size: 20px;
+    font-weight: 200;
+    line-height: 30px;
+    margin: 0;
+    margin-top: -5px;
+    color: #4F5665;
+}
+
+.separator_vertical {
+    height: 125px;
+}
+
+.round-frame {
+    position: relative;
+    width: 55px;
+    height: 55px;
+    background-image: url(/img/Icons/circle.svg);
+    background-position: center;
+    background-size: cover;
+}
+
+.stat_icon {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+
+    display: block;
+    margin: auto;
+}
+
+
+.stats_shadow {
+    position: absolute;
+    width: 1068.84px;
+    height: 189.22px;
+    left: 185.58px;
+    top: 700.35px;
+    z-index: -1;
+
+    background: #0D1025;
+    opacity: 0.06;
+    filter: blur(57px);
+    border-radius: 10px;
+}
+
+
+/* -------------------------- SECTION 2 ---------------------- */
+
+
+.section-2 {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    column-gap: 169px;
+    padding-bottom: 135px;
+}
+
+.features_block {
+    align-items: start;
+}
+
+.features_heading {
+    text-align: start;
+    width: 383px;
+    font-weight: 500;
+    font-size: 35px;
+}
+
+.features_paragraph {
+    color: #4F5665;
+
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 200;
+    text-align: start;
+    width: 427px;
+}
+
+.feature {
+    color: #4F5665;
+    display: flex;
+    font-size: 14px;
+    font-weight: 200;
+    column-gap: 12px;
+    margin-top: -2px;
+}
+
+
+
+
+/* ------------------------- PLANS SECTION -------------------- */
+
+
+.plans-section {
+
+}
+
+.plans-section__heading {
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 50px;
+}
+
+.plans-section__subheading {
+    margin-top: 0px;
+    font-weight: 200;
+    font-size: 16px;
+    color: #4F5665;
+    width: 555;
+}
+
+.plans {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.plan-card {
+    width: 330px;
+    height: 730px;
+    background: #FFFFFF;
+    border: 2px solid #DDDDDD;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    transition: .2s ease-in-out;
+}
+
+.plan-card:hover {
+    border: 2px solid #F53838;
+    transform: scale(1.01);
+}
+
+.plan-img {
+    margin-top: 78px;
+}
+
+
+.plan_name {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: 30px;
+}
+
+.price_n_select {
+    margin-bottom: 50px;
+
+}
+
+.price {
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 30px;
+}
+
+.select-plan-btn {
+    margin-top: -5px;
+    width: 177.88px;
+    height: 45px;
+    left: 251.06px;
+    top: 2441.55px;
+
+    border: 2px solid #F53838;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+    background: none;
+
+    color: #F53838;
+    transition: 0.1s ease-in-out;
+}
+
+.select-plan-btn:hover {
+    background: #F53838;
+    color: white;
+}
