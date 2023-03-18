@@ -1,5 +1,42 @@
 body {font-family: 'Rubik', sans-serif;;}
 
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+
+
+/* ---------------------- Animations ---------------------- */
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    /* color: #F53838; */
+  }
+  
+  .hover-underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #F53838;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .hover-underline-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+
+
+
+
+
 @media screen and (max-width: 991px) {
     .navbar_slogan {display: none;}  
     .navbar-tex {
@@ -112,6 +149,14 @@ body {font-family: 'Rubik', sans-serif;;}
         box-shadow: 0px 6px 43px 7px rgba(0,0,0,0.07);
         
     }
+    .plan-img {
+        margin-top: 2rem!important;
+    }
+
+    .price_n_select {
+        margin-top: .5rem!important;
+    }
+
 
     .plans {
         text-align: center;
@@ -149,6 +194,8 @@ body {font-family: 'Rubik', sans-serif;;}
     .customers-carousel {
         margin-top: 2rem;
     }
+
+    
 
 
 }
@@ -467,6 +514,10 @@ justify-content: space-around;
     margin-bottom: 15px;
 }
 
+.mo {
+    font-weight: 200;
+    color: #4F5665;
+}
 
 .select-plan-btn {
     width: 11.063rem;
