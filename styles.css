@@ -195,6 +195,23 @@ html, body {
         margin-top: 2rem;
     }
 
+
+    .medias-f {
+        width: 100%;
+    }
+
+
+    .logo_slogan-f { font-weight: 500; font-size: 20px;
+        margin-top: 1rem;
+        margin-left: .3rem;
+        
+    }
+
+    footer {
+        padding-left: .5rem!important;
+    }
+    
+
     
 
 
@@ -676,3 +693,6 @@ justify-content: space-around;
 .empty-space {
     min-width: 100px;
 }
+
+
+
